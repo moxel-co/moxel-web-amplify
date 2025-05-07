@@ -1,0 +1,12 @@
+[
+  {
+    "Action": ["ses:SendEmail"],
+    "Effect": "Allow",
+    "Resource": ["*"],
+    "Condition": {
+    "StringEquals": {
+      "ses:FromAddress": "app@moxel.co"
+    }
+  }
+   }
+]

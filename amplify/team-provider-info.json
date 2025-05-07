@@ -1,0 +1,27 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-moxelwebamplify-dev-20fe7-authRole",
+      "UnauthRoleArn": "arn:aws:iam::319336417552:role/amplify-moxelwebamplify-dev-20fe7-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::319336417552:role/amplify-moxelwebamplify-dev-20fe7-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-moxelwebamplify-dev-20fe7-deployment",
+      "UnauthRoleName": "amplify-moxelwebamplify-dev-20fe7-unauthRole",
+      "StackName": "amplify-moxelwebamplify-dev-20fe7",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:319336417552:stack/amplify-moxelwebamplify-dev-20fe7/84c8fc70-2b14-11f0-8f1a-02518b582ffd",
+      "AmplifyAppId": "d13qm9gei45bbc"
+    },
+    "categories": {
+      "function": {
+        "moxelwebamplifyb5ca34e9": {
+          "deploymentBucketName": "amplify-moxelwebamplify-dev-20fe7-deployment",
+          "s3Key": "amplify-builds/moxelwebamplifyb5ca34e9-4b514b416d714b564778-build.zip",
+          "sesEmail": "app@moxel.co"
+        }
+      },
+      "api": {
+        "moxelwebamplify": {}
+      }
+    }
+  }
+}

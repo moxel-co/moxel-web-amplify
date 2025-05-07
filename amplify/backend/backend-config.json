@@ -1,0 +1,63 @@
+{
+  "api": {
+    "moxelwebamplify": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
+  "function": {
+    "moxelwebamplifyb5ca34e9": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributes": [
+            "GraphQLAPIIdOutput",
+            "GraphQLAPIEndpointOutput"
+          ],
+          "category": "api",
+          "resourceName": "moxelwebamplify"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_moxelwebamplifyb5ca34e9_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "moxelwebamplifyb5ca34e9"
+        }
+      ]
+    },
+    "AMPLIFY_function_moxelwebamplifyb5ca34e9_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "moxelwebamplifyb5ca34e9"
+        }
+      ]
+    },
+    "AMPLIFY_function_moxelwebamplifyb5ca34e9_sesEmail": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "moxelwebamplifyb5ca34e9"
+        }
+      ]
+    }
+  }
+}
